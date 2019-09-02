@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.9622642, g: 0.9032574, b: 0.9032574, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -48,7 +48,7 @@ LightmapSettings:
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
-    m_IndirectOutputScale: 1
+    m_IndirectOutputScale: 0.85
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 6639995}
   - component: {fileID: 6639994}
   m_Layer: 0
-  m_Name: Friendly House robot right camera
+  m_Name: Friendly House robot right light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,7 +173,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7f3fc079d6fa69148b6f4c8c77c94eb8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9634,13 +9634,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 230337969}
-  m_LocalRotation: {x: -0.17841709, y: 0.86446214, z: 0.31073374, w: 0.35258642}
-  m_LocalPosition: {x: -10.099998, y: 36.9, z: 13.699999}
+  m_LocalRotation: {x: -0.0717819, y: 0.86421233, z: 0.14444579, w: 0.47657079}
+  m_LocalPosition: {x: -13.450001, y: 41.62, z: 16.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1044608638}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -41.533, y: 138.224, z: -6.8550005}
+  m_LocalEulerAnglesHint: {x: -18.547, y: 122.117004, z: 0.822}
 --- !u!1 &232603233
 GameObject:
   m_ObjectHideFlags: 0
@@ -15455,9 +15455,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {fileID: 602768581}
-  - {fileID: 457068021}
-  - {fileID: 996183537}
+  - {fileID: 172888504}
+  - {fileID: 526147768}
+  - {fileID: 804058401}
   delay: 3
   reverseOrder: 0
   braking: 1
@@ -15523,7 +15523,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 272786839}
   m_LocalRotation: {x: 0.002944982, y: 0.7133534, z: -0.002942078, w: 0.70079213}
-  m_LocalPosition: {x: 53.884, y: 1.043, z: 39.419}
+  m_LocalPosition: {x: 54.064, y: 1.04, z: 37.971}
   m_LocalScale: {x: 0.59504, y: 0.67392, z: 0.72304}
   m_Children:
   - {fileID: 1213726358}
@@ -15596,7 +15596,7 @@ GameObject:
   - component: {fileID: 306990213}
   - component: {fileID: 306990212}
   m_Layer: 0
-  m_Name: Friendly House robot right camera
+  m_Name: Friendly House robot right light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27766,7 +27766,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526147767}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.15, y: -2.27, z: 0.99}
+  m_LocalPosition: {x: -9.15, y: -2.27, z: 1.05}
   m_LocalScale: {x: 4, y: 3.3147879, z: 0.10000005}
   m_Children: []
   m_Father: {fileID: 1321038355}
@@ -42708,7 +42708,7 @@ GameObject:
   - component: {fileID: 845896371}
   - component: {fileID: 845896370}
   m_Layer: 0
-  m_Name: Friendly House robot left camera
+  m_Name: Friendly House robot left light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44786,7 +44786,7 @@ GameObject:
   - component: {fileID: 941449319}
   - component: {fileID: 941449318}
   m_Layer: 0
-  m_Name: Friendly House robot back camera
+  m_Name: Friendly House robot back light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52758,6 +52758,51 @@ Transform:
   m_Father: {fileID: 1014701603}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1022148504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1022148505}
+  - component: {fileID: 1022148506}
+  m_Layer: 0
+  m_Name: House light probe 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1022148505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022148504}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -21.9, y: -2.36, z: 1.1500015}
+  m_LocalScale: {x: 2.0318408, y: 1.37606, z: 2.3852437}
+  m_Children: []
+  m_Father: {fileID: 1321038355}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &1022148506
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022148504}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 1, z: -1}
+  - {x: 1, y: -1, z: 1}
+  - {x: 1, y: -1, z: -1}
+  - {x: -1, y: 1, z: 1}
+  - {x: -1, y: 1, z: -1}
+  - {x: -1, y: -1, z: 1}
+  - {x: -1, y: -1, z: -1}
 --- !u!43 &1025754807
 Mesh:
   m_ObjectHideFlags: 0
@@ -53128,7 +53173,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1055872537}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -17.19, y: -4, z: -0.83}
+  m_LocalPosition: {x: -17.19, y: -4.06, z: -0.83}
   m_LocalScale: {x: 16, y: 8, z: 0.10000005}
   m_Children: []
   m_Father: {fileID: 1321038355}
@@ -60724,7 +60769,7 @@ GameObject:
   - component: {fileID: 1204537055}
   - component: {fileID: 1204537056}
   m_Layer: 0
-  m_Name: Light Probe Group
+  m_Name: 'House light probe '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60737,8 +60782,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1204537054}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -17.11, y: -2.36, z: 1.1500015}
-  m_LocalScale: {x: 2.031837, y: 1.3760614, z: 1.6394811}
+  m_LocalPosition: {x: -14.13, y: -2.36, z: 1.1500015}
+  m_LocalScale: {x: 2.031837, y: 1.3760614, z: 4.708799}
   m_Children: []
   m_Father: {fileID: 1321038355}
   m_RootOrder: 0
@@ -67563,7 +67608,7 @@ GameObject:
   - component: {fileID: 1270498475}
   - component: {fileID: 1270498474}
   m_Layer: 0
-  m_Name: Friendly House robot back camera
+  m_Name: Friendly House robot back light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67576,7 +67621,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1270498472}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.403, y: 0.25, z: -0.017}
+  m_LocalPosition: {x: -1.4, y: 0.228, z: -0.059}
   m_LocalScale: {x: 0.64542913, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 272786847}
@@ -67611,7 +67656,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7f3fc079d6fa69148b6f4c8c77c94eb8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73301,6 +73346,7 @@ Transform:
   - {fileID: 1055872538}
   - {fileID: 2027626810}
   - {fileID: 804058401}
+  - {fileID: 1022148505}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102890,7 +102936,7 @@ GameObject:
   - component: {fileID: 1696065501}
   - component: {fileID: 1696065500}
   m_Layer: 0
-  m_Name: Friendly House robot left camera
+  m_Name: Friendly House robot left light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102903,7 +102949,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1696065498}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.89, y: 0.25, z: 0.311}
+  m_LocalPosition: {x: -0.89, y: 0.22, z: 0.28}
   m_LocalScale: {x: 1.0000008, y: 1, z: 1.000001}
   m_Children: []
   m_Father: {fileID: 272786847}
@@ -102938,7 +102984,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7f3fc079d6fa69148b6f4c8c77c94eb8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103444,9 +103490,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {fileID: 602768581}
-  - {fileID: 457068021}
-  - {fileID: 996183537}
+  - {fileID: 172888504}
+  - {fileID: 526147768}
+  - {fileID: 804058401}
   delay: 3
   reverseOrder: 0
   braking: 1
@@ -103512,7 +103558,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700929837}
   m_LocalRotation: {x: 0.002944982, y: 0.7133534, z: -0.002942078, w: 0.70079213}
-  m_LocalPosition: {x: 55.67, y: 1.03, z: 39.39}
+  m_LocalPosition: {x: 58.88, y: 1.12, z: 39.33}
   m_LocalScale: {x: 0.59504, y: 0.67392, z: 0.72304}
   m_Children:
   - {fileID: 1283605764}
